@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('body');
             $table->string('image_url')->nullable();
             $table->boolean('active')->default(true);
+            $table->integer('category')->default(1);
             $table->timestamps();
         });
     }
